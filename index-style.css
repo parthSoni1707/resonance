@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #f6f6f2;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.link{
+    text-decoration: none;
+    color: #222222;
+}
+
+/* Nav-bar for mobile starts */
+
+
+
+.nav-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+    border: 3px solid white;
+}
+
+.mobile-name-panel{
+    display: flex;
+    width: 90%;
+    margin-top: 7px;
+    padding: 7px;
+    padding-bottom: 3px;
+    border-radius: 50px;
+    background-color: rgb(232, 231, 231);
+}
+
+.logo-mobile{
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.mobile-name{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mobile-tabs-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    list-style: none;
+    gap: 1rem;
+}
+
+.mobile-tab{
+    background-color: rgb(232, 231, 231);
+    padding: 7px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+.mobile-tab:hover{
+    background-color: green;
+}
+
+
+/* Nav-bar for mobile ends */
+
+/* Nav-bar for tabs starts */
+
+.nav-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 768px;
+    border: 3px solid white;
+}
+
+.tab-name-panel{
+    display: flex;
+    width: 90%;
+    margin-top: 7px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(232, 231, 231);
+}
+
+.tab-name{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo-tab{
+    width: 65px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.tab-tabs-bar{
+    display: flex;
+    justify-content: flex-start;
+    width: 87%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 10px;
+    list-style: none;
+    gap: 1rem;
+}
+
+.tab-tab{
+    font-size: 17px;
+    background-color: rgb(232, 231, 231);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+}
+
+.tab-tab:hover{
+    background-color: green;
+}
+
+/* Nav-bar for tabs ends */
+
+/* Nav-bar for big screens starts here */
+.nav-pc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pc-name-panel{
+    display: flex;
+    width: 90%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(232, 231, 231);
+}
+
+.pc-name{
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.logo-pc{
+    width: 65px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.pc-tabs-bar{
+    display: flex;
+    justify-content: flex-start;
+    width: 87%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 10px;
+    list-style: none;
+    gap: 1rem;
+}
+
+.pc-tab{
+    font-size: 20px;
+    background-color: rgb(232, 231, 231);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 25px;
+}
+
+.pc-tab:hover{
+    background-color: green;
+}
+/* Nav-bar for big screens ends here. */
+
+/* Media Queries */
+@media (max-width:480px) {
+    .nav-mobile{
+        display: flex;
+    }
+    .nav-tab{
+        display: none;
+    }
+    .nav-pc{
+        display: none;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .nav-mobile{
+        display:none;
+    }
+    .nav-tab{
+        display: flex;
+    }
+    .nav-pc{
+        display: none;
+    }
+}
+
+@media (min-width:769px){
+    .nav-mobile{
+        display: none;
+    }
+    .nav-tab{
+        display: none;
+    }
+    .nav-pc{
+        display: flex;
+    }
+}
